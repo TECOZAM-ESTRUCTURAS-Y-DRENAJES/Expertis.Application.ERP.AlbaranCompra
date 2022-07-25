@@ -1,0 +1,15 @@
+C:\Users\lgonzalez\Desktop\EXPERTIS\Bin\Expertis.Application.ERP.AlbaranCompra.dll
+C:\Users\lgonzalez\Desktop\EXPERTIS\Bin\Expertis.Application.ERP.AlbaranCompra.pdb
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.CISeguimientoTransporte.resources
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.frmAlbaranesEspeciales.resources
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.FrmCantRechazo.resources
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.frmDescontabilizar.resources
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.frmFacturar.resources
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.FrmGastos.resources
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.frmValoracionSuministro.resources
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.MntoAlbaranCompra.resources
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Expertis.Application.ERP.AlbaranCompra.vbproj.GenerateResource.Cache
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Expertis.Application.ERP.AlbaranCompra.dll.licenses
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Expertis.Application.ERP.AlbaranCompra.dll
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Expertis.Application.ERP.AlbaranCompra.pdb
