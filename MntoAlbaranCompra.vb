@@ -2401,6 +2401,8 @@ Public Class MntoAlbaranCompra
 
     Private Sub LoadToolActions()
         If Not mblnSAAS Then
+            'David Velasco 04/10/22 ASignar Centro de Coste a todas las lineas
+            Me.FormActions.Add("Asignar centro de coste", AddressOf AsignarCentroCoste, ExpertisApp.GetIcon("folder.ico"))
             Me.FormActions.Add("Calcular Precio Optimo", AddressOf AccionPrecioOptimo, ExpertisApp.GetIcon("calculator.ico"))
             Me.AddSeparator()
             If mblnGestionInventarioPermanente Then
@@ -2440,6 +2442,71 @@ Public Class MntoAlbaranCompra
 #End Region
 
 #Region " Acciones Toolbar "
+    Public Sub AsignarCentroCoste()
+
+        Dim frm As New frmCentroCoste
+        frm.ShowDialog()
+        Dim idcentroCoste As String
+        idcentroCoste = frm.AdvSearch1.Value
+
+        'Recupero las lineas del pedido
+        Dim DtDatos As DataTable = jngLineaAlbaran.DataSource
+        'Inserto en tbPedidoCompraAnalitica
+        Dim dt As New DataTable
+        Dim filtro As New Filter
+        Dim arti As New Business.Negocio.Articulo
+        '-----
+        Dim clPedidoAnalitica As New AlbaranCompraAnalitica
+        Dim dupdate As New DataTable
+        For Each dr As DataRow In DtDatos.Rows
+            filtro.Add("IDLineaAlbaran", FilterOperator.Equal, dr("IDLineaAlbaran"))
+            dt = New BE.DataEngine().Filter("tbAlbaranCompraAnalitica", filtro)
+            Dim sql As String
+            'Si la linea no tiene analitica inserto
+            'Si no borro e inserto
+            If dt.Rows.Count = 0 Then
+                dupdate = clPedidoAnalitica.AddNewForm
+                dupdate.Rows(0)("IDLineaAlbaran") = dr("IDLineaAlbaran")
+                dupdate.Rows(0)("IDCentroCoste") = idcentroCoste
+                dupdate.Rows(0)("Importe") = dr("Importe")
+                dupdate.Rows(0)("ImporteA") = 0.0
+                dupdate.Rows(0)("ImporteB") = 0.0
+                dupdate.Rows(0)("Porcentaje") = 100.0
+                dupdate.Rows(0)("FechaCreacionAudi") = DateTime.Now
+                dupdate.Rows(0)("FechaModificacionAudi") = DateTime.Now
+                dupdate.Rows(0)("UsuarioAudi") = ExpertisApp.UserName
+
+
+                clPedidoAnalitica.Update(dupdate)
+                dupdate.Clear()
+                'sql = "insert into tbPedidoCompraAnalitica (IDLineaPedido, IDCentroCoste, Importe, ImporteA, ImporteB, Porcentaje, FechaCreacionAudi, FechaModificacionAudi, UsuarioAudi) "
+                'sql &= "values (" & dr("IDLineaPedido") & ", '" & idcentroCoste & "', " & dr("Importe") & ", 0.00, 0.00,100.00, '" & DateTime.Now & "','" & DateTime.Now & "' , '" & ExpertisApp.UserName & "') "
+                'arti.executestrSQL(sql)
+            Else
+                sql = "delete from tbAlbaranCompraAnalitica  where IDLineaAlbaran='" & dr("IDLineaAlbaran") & "'"
+                arti.executestrSQL(sql)
+
+                dupdate = clPedidoAnalitica.AddNewForm
+                dupdate.Rows(0)("IDLineaAlbaran") = dr("IDLineaAlbaran")
+                dupdate.Rows(0)("IDCentroCoste") = idcentroCoste
+                dupdate.Rows(0)("Importe") = dr("Importe")
+                dupdate.Rows(0)("ImporteA") = 0.0
+                dupdate.Rows(0)("ImporteB") = 0.0
+                dupdate.Rows(0)("Porcentaje") = 100.0
+                dupdate.Rows(0)("FechaCreacionAudi") = DateTime.Now
+                dupdate.Rows(0)("FechaModificacionAudi") = DateTime.Now
+                dupdate.Rows(0)("UsuarioAudi") = ExpertisApp.UserName
+
+
+                clPedidoAnalitica.Update(dupdate)
+                dupdate.Clear()
+            End If
+            dt = Nothing
+            filtro.Clear()
+        Next
+
+        MsgBox("Centros de costes asignados con éxito.")
+    End Sub
 
     Private Sub AccionPrecioOptimo()
         If IsNumeric(Me.CurrentRow("IDAlbaran")) Then

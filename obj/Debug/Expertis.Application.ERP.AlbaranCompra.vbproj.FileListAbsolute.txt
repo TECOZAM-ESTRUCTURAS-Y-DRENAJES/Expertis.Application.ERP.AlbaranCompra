@@ -13,3 +13,4 @@ C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Ex
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Expertis.Application.ERP.AlbaranCompra.dll.licenses
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Expertis.Application.ERP.AlbaranCompra.dll
 C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Expertis.Application.ERP.AlbaranCompra.pdb
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.AlbaranCompra\obj\Debug\Solmicro.Expertis.Application.ERP.AlbaranCompra.frmCentroCoste.resources
